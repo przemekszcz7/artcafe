@@ -104,7 +104,7 @@ export default function App() {
 
           <a
             href="tel:536594474"
-            className="flex items-center gap-3 bg-brand-brown text-brand-cream px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-brand-accent transition-all duration-300 shadow-xl shadow-brand-brown/20"
+            className="hidden sm:flex items-center gap-3 bg-brand-brown text-brand-cream px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-brand-accent transition-all duration-300 shadow-xl shadow-brand-brown/20"
           >
             <Phone size={14} />
             <span className="hidden sm:inline">Rezerwacja:</span> 536 594 474
@@ -138,7 +138,7 @@ export default function App() {
               <span className="inline-block text-brand-cream text-sm uppercase tracking-[0.5em] font-bold mb-6 backdrop-blur-sm bg-black/10 px-4 py-1 rounded-full border border-white/20">
                 Poczuj smak regionu
               </span>
-              <h1 className="text-7xl md:text-9xl text-brand-cream font-serif mb-6 drop-shadow-2xl leading-tight">
+              <h1 className="text-6xl md:text-9xl text-brand-cream font-serif mb-6 drop-shadow-2xl leading-tight">
                 Art Cafe
               </h1>
               <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-brand-cream/80 text-lg font-serif italic tracking-wide">
@@ -188,7 +188,7 @@ export default function App() {
             <motion.div {...fadeIn} className="relative">
               <div className="absolute -top-12 -left-12 text-[150px] font-serif text-brand-brown/5 leading-none select-none">37-450</div>
               <span className="text-brand-accent font-bold uppercase tracking-[0.3em] text-xs mb-6 block">Tradycja i Smak</span>
-              <h2 className="text-5xl md:text-6xl mb-10 leading-tight">
+              <h2 className="text-4xl md:text-6xl mb-10 leading-tight">
                 Przybliżamy Gościom <br />
                 <span className="italic font-light">smaki naszego regionu.</span>
               </h2>
@@ -214,8 +214,8 @@ export default function App() {
                </div>
                <div className="space-y-4">
                   <img src={GALLERY_IMAGES[0]} className="rounded-3xl shadow-2xl h-80 w-full object-cover" />
-                  <div className="bg-brand-accent p-8 rounded-3xl text-brand-cream">
-                    <h4 className="text-2xl font-serif mb-2 font-bold leading-tight uppercase tracking-tighter">Specjalizujemy się w daniach kuchni regionalnej</h4>
+                  <div className="bg-brand-accent p-6 md:p-8 rounded-3xl text-brand-cream">
+                    <h4 className="text-lg md:text-2xl font-serif mb-2 font-bold leading-tight uppercase tracking-tight md:tracking-tighter">Specjalizujemy się w daniach kuchni regionalnej</h4>
                   </div>
                </div>
             </motion.div>
@@ -276,7 +276,7 @@ export default function App() {
                     <div className="w-12 h-12 rounded-2xl bg-brand-brown text-brand-cream flex items-center justify-center">
                       <Clock size={24} />
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-serif">Godziny i Rezerwacje</h2>
+                    <h2 className="text-3xl md:text-5xl font-serif">Godziny i Rezerwacje</h2>
                   </div>
                   <p className="text-lg text-brand-brown/60 mb-12 max-w-md">
                     Planujesz wizytę? Zobacz kiedy jesteśmy otwarci i zarezerwuj stolik, aby mieć pewność najlepszego miejsca.
@@ -320,9 +320,9 @@ export default function App() {
                   <div className="space-y-8">
                     {OPENING_HOURS.map((item, idx) => (
                       <div key={idx} className="flex justify-between items-end group">
-                        <div className="flex flex-col">
-                          <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-accent mb-1 group-hover:opacity-100 opacity-40 transition-opacity">{idx === 0 ? "Odpoczynek" : "Zapraszamy"}</span>
-                          <span className="text-2xl font-serif leading-none">{item.day}</span>
+                        <div className="flex flex-col min-w-0">
+                          <span className="text-[9px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-brand-accent mb-1 group-hover:opacity-100 opacity-40 transition-opacity whitespace-nowrap">{idx === 0 ? "Odpoczynek" : "Zapraszamy"}</span>
+                          <span className="text-xl md:text-2xl font-serif leading-none truncate">{item.day}</span>
                         </div>
                         <div className="flex-1 border-b border-dotted border-brand-brown/10 mx-6 mb-1" />
                         <span className={`text-xl font-medium ${item.closed ? "text-red-500 italic opacity-60" : "font-light"}`}>
@@ -343,7 +343,7 @@ export default function App() {
             <div className="flex flex-col items-center text-center mb-20">
                <motion.div {...fadeIn}>
                  <MapPin className="text-brand-accent mx-auto mb-6" size={48} />
-                 <h2 className="text-5xl md:text-7xl font-serif mb-8 tracking-tighter">Gdzie nas znaleźć?</h2>
+                 <h2 className="text-4xl md:text-7xl font-serif mb-8 tracking-tighter">Gdzie nas znaleźć?</h2>
                  <p className="text-xl text-brand-brown/50 max-w-2xl font-medium uppercase tracking-widest">W samym centrum serca Stalowej Woli</p>
                </motion.div>
             </div>
