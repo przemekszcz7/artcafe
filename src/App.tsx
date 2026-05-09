@@ -138,15 +138,15 @@ export default function App() {
               <span className="inline-block text-brand-cream text-sm uppercase tracking-[0.5em] font-bold mb-6 backdrop-blur-sm bg-black/10 px-4 py-1 rounded-full border border-white/20">
                 Poczuj smak regionu
               </span>
-              <h1 className="text-6xl md:text-9xl text-brand-cream font-serif mb-6 drop-shadow-2xl leading-tight">
+              <h1 className="text-6xl md:text-9xl text-brand-cream font-serif mb-6 drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)] leading-tight">
                 Art Cafe
               </h1>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-brand-cream/80 text-lg font-serif italic tracking-wide">
-                 <span>Kuchnia Regionalna</span>
-                 <div className="hidden md:block w-20 h-px bg-white/30" />
-                 <span>Wyjątkowa Atmosfera</span>
-                 <div className="hidden md:block w-20 h-px bg-white/30" />
-                 <span>Stalowa Wola</span>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-brand-cream text-base md:text-xl font-serif italic tracking-wide drop-shadow-md">
+                 <span className="bg-black/10 md:bg-transparent px-3 py-1 rounded-full border border-white/10 md:border-0">Kuchnia Regionalna</span>
+                 <div className="hidden md:block w-20 h-px bg-white/40" />
+                 <span className="bg-black/10 md:bg-transparent px-3 py-1 rounded-full border border-white/10 md:border-0">Wyjątkowa Atmosfera</span>
+                 <div className="hidden md:block w-20 h-px bg-white/40" />
+                 <span className="bg-black/10 md:bg-transparent px-3 py-1 rounded-full border border-white/10 md:border-0">Stalowa Wola</span>
               </div>
             </motion.div>
           </div>
