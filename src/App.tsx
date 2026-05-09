@@ -116,7 +116,7 @@ export default function App() {
         {/* Dramatic Hero Section */}
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
           <motion.div style={{ opacity: heroOpacity, scale: heroScale }} className="absolute inset-0 z-0">
-             <div className="absolute inset-0 bg-gradient-to-b from-brand-brown/40 via-transparent to-brand-cream z-10" />
+             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-brand-cream z-10" />
              <img
                src={GALLERY_IMAGES[0]}
                alt="Restauracja Art Cafe Wnętrze"
@@ -124,29 +124,30 @@ export default function App() {
              />
           </motion.div>
           
-          <div className="relative z-20 text-center px-6 max-w-5xl">
+          <div className="relative z-20 text-center px-6 max-w-5xl -translate-y-12 md:-translate-y-16">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2, ease: "circOut" }}
+              className="flex flex-col items-center"
             >
               <img
                 src={LOGO_URL}
                 alt="Art Cafe Logo Large"
-                className="w-32 h-32 md:w-56 md:h-56 mx-auto rounded-full border-[6px] border-brand-cream mb-12 shadow-[0_32px_64px_-12px_rgba(0,0,0,0.5)]"
+                className="w-24 h-24 md:w-56 md:h-56 mx-auto rounded-full border-[4px] md:border-[6px] border-brand-cream mb-4 md:mb-12 shadow-[0_32px_64px_-12px_rgba(0,0,0,0.6)]"
               />
-              <span className="inline-block text-brand-cream text-sm uppercase tracking-[0.5em] font-bold mb-6 backdrop-blur-sm bg-black/10 px-4 py-1 rounded-full border border-white/20">
+              <span className="inline-block text-brand-cream text-[10px] md:text-sm uppercase tracking-[0.5em] font-bold mb-4 md:mb-6 backdrop-blur-md bg-black/30 px-4 md:px-6 py-1.5 md:py-2 rounded-full border border-white/30 shadow-lg">
                 Poczuj smak regionu
               </span>
-              <h1 className="text-6xl md:text-9xl text-brand-cream font-serif mb-6 drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)] leading-tight">
+              <h1 className="text-5xl md:text-9xl text-brand-cream font-serif mb-4 md:mb-6 drop-shadow-[0_10px_30px_rgba(0,0,0,0.8)] leading-tight font-bold">
                 Art Cafe
               </h1>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-brand-cream text-base md:text-xl font-serif italic tracking-wide drop-shadow-md">
-                 <span className="bg-black/10 md:bg-transparent px-3 py-1 rounded-full border border-white/10 md:border-0">Kuchnia Regionalna</span>
-                 <div className="hidden md:block w-20 h-px bg-white/40" />
-                 <span className="bg-black/10 md:bg-transparent px-3 py-1 rounded-full border border-white/10 md:border-0">Wyjątkowa Atmosfera</span>
-                 <div className="hidden md:block w-20 h-px bg-white/40" />
-                 <span className="bg-black/10 md:bg-transparent px-3 py-1 rounded-full border border-white/10 md:border-0">Stalowa Wola</span>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-brand-cream text-sm md:text-2xl font-serif italic tracking-wide">
+                 <span className="bg-black/20 md:bg-black/10 px-3 md:px-4 py-1 md:py-1.5 rounded-full border border-white/20 backdrop-blur-sm shadow-md transition-all hover:bg-black/30 cursor-default">Kuchnia Regionalna</span>
+                 <div className="hidden md:block w-16 h-px bg-white/50" />
+                 <span className="bg-black/20 md:bg-black/10 px-3 md:px-4 py-1 md:py-1.5 rounded-full border border-white/20 backdrop-blur-sm shadow-md transition-all hover:bg-black/30 cursor-default">Wyjątkowa Atmosfera</span>
+                 <div className="hidden md:block w-16 h-px bg-white/50" />
+                 <span className="bg-black/20 md:bg-black/10 px-3 md:px-4 py-1 md:py-1.5 rounded-full border border-white/20 backdrop-blur-sm shadow-md transition-all hover:bg-black/30 cursor-default">Stalowa Wola</span>
               </div>
             </motion.div>
           </div>
@@ -155,10 +156,10 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
-            className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
+            className="absolute bottom-4 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-4 pointer-events-none"
           >
-            <span className="text-[10px] uppercase tracking-[0.4em] font-bold opacity-40">Przewiń</span>
-            <div className="w-px h-16 bg-gradient-to-b from-brand-brown/40 to-transparent" />
+            <span className="text-[9px] md:text-[10px] uppercase tracking-[0.4em] font-bold opacity-40">Przewiń</span>
+            <div className="w-px h-6 md:h-16 bg-gradient-to-b from-brand-brown/40 to-transparent" />
           </motion.div>
         </section>
 
