@@ -317,7 +317,7 @@ export default function App() {
 
               <motion.div {...fadeIn} transition={{ delay: 0.3 }} className="lg:col-span-7">
                 <div className="bg-white p-6 sm:p-12 md:p-20 rounded-[40px] md:rounded-[60px] shadow-2xl border border-brand-brown/5">
-                  <h3 className="text-xl md:text-3xl font-serif mb-8 md:mb-12 text-center uppercase tracking-widest font-bold text-brand-brown/20 leading-none">Tygodniowy Grafik</h3>
+                  <h3 className="text-xl md:text-3xl font-serif mb-8 md:mb-12 text-center uppercase tracking-widest font-bold text-brand-brown/20 leading-none">Godziny Otwarcia</h3>
                   <div className="space-y-6 md:space-y-8">
                     {OPENING_HOURS.map((item, idx) => (
                       <div key={idx} className="flex justify-between items-end group">
