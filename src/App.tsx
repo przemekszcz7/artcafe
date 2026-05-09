@@ -214,8 +214,8 @@ export default function App() {
                </div>
                <div className="space-y-4">
                   <img src={GALLERY_IMAGES[0]} className="rounded-3xl shadow-2xl h-80 w-full object-cover" />
-                  <div className="bg-brand-accent p-6 md:p-8 rounded-3xl text-brand-cream">
-                    <h4 className="text-lg md:text-2xl font-serif mb-2 font-bold leading-tight uppercase tracking-tight md:tracking-tighter">Specjalizujemy się w daniach kuchni regionalnej</h4>
+                  <div className="bg-brand-accent p-5 sm:p-8 rounded-3xl text-brand-cream text-center sm:text-left">
+                    <h4 className="text-base sm:text-2xl font-serif mb-2 font-bold leading-tight uppercase tracking-tight md:tracking-tighter">Specjalizujemy się w daniach kuchni regionalnej</h4>
                   </div>
                </div>
             </motion.div>
@@ -315,17 +315,17 @@ export default function App() {
               </motion.div>
 
               <motion.div {...fadeIn} transition={{ delay: 0.3 }} className="lg:col-span-7">
-                <div className="bg-white p-12 md:p-20 rounded-[60px] shadow-2xl border border-brand-brown/5">
-                  <h3 className="text-3xl font-serif mb-12 text-center uppercase tracking-widest font-bold text-brand-brown/20 leading-none">Tygodniowy Grafik</h3>
-                  <div className="space-y-8">
+                <div className="bg-white p-6 sm:p-12 md:p-20 rounded-[40px] md:rounded-[60px] shadow-2xl border border-brand-brown/5">
+                  <h3 className="text-xl md:text-3xl font-serif mb-8 md:mb-12 text-center uppercase tracking-widest font-bold text-brand-brown/20 leading-none">Tygodniowy Grafik</h3>
+                  <div className="space-y-6 md:space-y-8">
                     {OPENING_HOURS.map((item, idx) => (
                       <div key={idx} className="flex justify-between items-end group">
                         <div className="flex flex-col min-w-0">
-                          <span className="text-[9px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-brand-accent mb-1 group-hover:opacity-100 opacity-40 transition-opacity whitespace-nowrap">{idx === 0 ? "Odpoczynek" : "Zapraszamy"}</span>
-                          <span className="text-xl md:text-2xl font-serif leading-none truncate">{item.day}</span>
+                          <span className="text-[8px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-brand-accent mb-1 group-hover:opacity-100 opacity-40 transition-opacity whitespace-nowrap">{idx === 0 ? "Odpoczynek" : "Zapraszamy"}</span>
+                          <span className="text-base sm:text-xl md:text-2xl font-serif leading-none truncate">{item.day}</span>
                         </div>
-                        <div className="flex-1 border-b border-dotted border-brand-brown/10 mx-6 mb-1" />
-                        <span className={`text-xl font-medium ${item.closed ? "text-red-500 italic opacity-60" : "font-light"}`}>
+                        <div className="flex-1 border-b border-dotted border-brand-brown/10 mx-2 sm:mx-6 mb-1" />
+                        <span className={`text-sm sm:text-xl font-medium whitespace-nowrap ${item.closed ? "text-red-500 italic opacity-60" : "font-light"}`}>
                           {item.hours}
                         </span>
                       </div>
